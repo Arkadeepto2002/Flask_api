@@ -21,6 +21,10 @@ def db_connection():
         print(e)
     return conn
 
+@app.route('/')
+def index():
+    return "Perform GET and POST keys:(author,title and language) on \'route/book\' or perform GET,PUT or DELETE on \'route/book/id\'"
+
 @app.route('/<name>')
 def greet(name):
     return "Hello, "+name
