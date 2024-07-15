@@ -83,6 +83,5 @@ def single_book(id):
         return f"The book with id {id} has been deleted"
     conn.close()
 
-# if(__name__ == '__main__'):
-
-#     app.run()
+if(__name__ == '__main__'):
+    app.run()
